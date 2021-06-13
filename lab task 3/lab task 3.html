@@ -1,0 +1,101 @@
+ problem-1
+
+<html>
+	<head></head>
+	<body>
+		<span>A quick brown <b><?php echo "fox ";?></b> jumps over the lazy <b><?php echo "dog";?></b></span>
+	</body>
+	<br>
+</html>
+
+
+
+problem -2
+
+<?php
+	$marks=75;
+	
+?>
+
+<html>
+	<head></head>
+	<body>
+		<b>Grading System:</b><br>
+		<?php
+			if($marks>=90)
+				{echo "The result is : $marks and the grade is A+";}
+			elseif($marks>=80 && $marks<90)
+				{echo "The result is : $marks and the grade is A";}
+			elseif($marks>=70 && $marks<80)
+				{echo "The result is : $marks and the grade is B";}
+			elseif($marks>=60 && $marks<70)
+				{echo "The result is : $marks and the grade is C";}
+			else
+				{echo "The result is : $marks and the grade is F";}
+		?>
+		
+	</body>
+	<br>
+</html>
+
+problem-3
+
+<?php
+	$lenth=5;
+	$width=5;
+	$perimeter=2*($lenth+$width);
+	$area=$lenth*$width;
+	
+?>
+
+<html>
+	<head></head>
+	<body>
+		<?php
+			if($lenth===$width)
+				{echo "The shape is a square.<br>";
+				 echo "The perimeter is : $perimeter and the area is : $area";}
+			
+			else
+				{echo "The perimeter is : $perimeter and the area is : $area";}
+		?>
+		
+	</body>
+</html>
+
+problem -4
+
+<?php
+$name="rahul";
+
+if($name=="raju" or $name=="rahul" or $name=="korim"){
+echo "Hello!";
+}
+else
+{
+echo "You are not recognized";
+}
+?>
+
+
+problem-5
+
+<?php
+	$backColor="green";
+	$fontColor="red";
+	$imageWidth="80px";
+	$imageHeight="80px";
+?>
+<html>
+	<head></head>
+	<body>
+		<table>
+			<tr>
+				<td><img src="AIUB_logo.jpg" height="<?php echo $imageHeight;?>" width="<?php echo $imageWidth;?>"></td>
+				<td><h2>American International <br>University-<span style="background-color:<?php echo $backColor;?>; color:<?php echo $fontColor;?>;">Bangladesh </h2></span></td>
+			</tr>
+			
+		</table>
+		
+	</body>
+</html>
